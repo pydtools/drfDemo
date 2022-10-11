@@ -42,4 +42,5 @@ urlpatterns = [
     path('api-auth/', include('rest_framework.urls')),
     path('', include(router.urls)),
     path('schema/', schema_view),
+    path('', include('snippets.urls'))
 ]
